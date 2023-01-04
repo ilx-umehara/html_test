@@ -1,0 +1,39 @@
+@charset "utf-8";
+p {
+  padding: initial;
+  margin: initial;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  z-index: 100;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  display: flex;
+}
+
+td {
+  width: 150px;
+  height: 24px;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+td.flex {
+  display: flex;
+}
+div.changed {
+  width: 150px;
+  height: 24px;
+  position: absolute;
+  z-index: 1;
+}
+
+input[type="checkbox"]:checked ~ div.changed {
+  background: #c6e0f7;
+}
